@@ -4,6 +4,7 @@ CPU Job and Process Scheduler Simulation Created For Operating Systems Class
 Input:
 
 Design Approach:
+
 Our scheduling simulator contains 2 hold queues, a ready queue, a CPU or run function, and a wait
 queue. Our program begins by reading in input from a file called input.txt. The program reads in the
 input file line by line and stores each line into a 2-dimensional array. When it finishes reading in all the
