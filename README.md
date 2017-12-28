@@ -1,7 +1,8 @@
 # JobAndProcessScheduler
 CPU Job and Process Scheduler Simulation Created For Operating Systems Class
 
-Input:/n
+Input:
+
 A text file named "input.txt".  The input file describes a set of arriving jobs and their actions.  Each line in the file will contain one of the commands listed below. Each command consists of a letter in column one followed by a set of parameters. Each text file contains multiple type "C" (system configuration) commands. There will always be exactly one blank after each number in the input file.
 
 Input File Command Examples:
