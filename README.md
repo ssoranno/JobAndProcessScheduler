@@ -2,6 +2,20 @@
 CPU Job and Process Scheduler Simulation Created For Operating Systems Class
 
 Input:
+A text file named "input.txt".  The input file describes a set of arriving jobs and their actions.  Each line in the file will contain one of the commands listed below. Each command consists of a letter in column one followed by a set of parameters. Each text file contains multiple type "C" (system configuration) commands. There will always be exactly one blank after each number in the input file.
+
+Input File Command Examples:
+
+System Configuration: C 9 M=45 S=12 Q=1
+  The example above states that the system to be simulated starts at time 9, and that the system has a main memory consisting of 45; 12   serial devices; and a time quantum or time slice of 1.
+Job Arrival: A 10 J=1 M=5 S=4 R=3 P=1
+  The example above states that job number 1 with priority 1 arrives at time 10, requires 5 units of main memory, holds no more than 4     devices at any point during execution, and runs for 3 units of time.
+Request for Devices: Q 10 J=3 D=4
+  The example above states that at time 10, job number 3 requests for 4 devices. A job only requests devices when it is running on the     CPU. The Quantum is interrupted to process request. If request is granted process goes to the end of the ready queue, else it goes     to the device wait state.
+Release of Devices: L 10 J=5 D=1
+  The example above states that at time 10, job number 5 releases one device. A job only releases devices when it is running on the CPU.   Quantum is interrupted. One or more jobs may be taken off the Device Wait queue due to this.
+Display Current System Status: D 11
+  The example above states that at time 11 an external event is generated and the output should be printed.  If "D 9999" is executed       then then simulation terminated the output is printed.
 
 Design Approach:
 
@@ -35,3 +49,4 @@ command prints the current state of the entire system.
 
 Output:
 
+A list of each job that has entered the system; for each job, print the state of the job, the remaining service time for unfinished jobs and the turnaround time and weighted turnaround time for finished jobs.  The contents of each queue, the system turnaround time, and system weighted turnaround are also printed.
