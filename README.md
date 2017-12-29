@@ -1,7 +1,7 @@
 # JobAndProcessScheduler
 CPU Job and Process Scheduler Simulation Created For Operating Systems Class
 
-Input:
+## Input:
 
 A text file named "input.txt".  The input file describes a set of arriving jobs and their actions.  Each line in the file will contain one of the commands listed below. Each command consists of a letter in column one followed by a set of parameters. Each text file contains multiple type "C" (system configuration) commands. There will always be exactly one blank after each number in the input file.
 
@@ -27,7 +27,7 @@ Display Current System Status: D 11
 
   The example above states that at time 11 an external event is generated and the output should be printed.  If "D 9999" is executed       then then simulation terminated the output is printed.
 
-Design Approach:
+## Design Approach:
 
 Our scheduling simulator contains 2 hold queues, a ready queue, a CPU or run function, and a wait
 queue. Our program begins by reading in input from a file called input.txt. The program reads in the
@@ -57,6 +57,6 @@ the Q command because sometimes the correct job is not running in the CPU when t
 executed. We also check the release of the devices with the banker’s algorithm. Finally, the D
 command prints the current state of the entire system.
 
-Output:
+## Output:
 
 A list of each job that has entered the system; for each job, print the state of the job, the remaining service time for unfinished jobs and the turnaround time and weighted turnaround time for finished jobs.  The contents of each queue, the system turnaround time, and system weighted turnaround are also printed.
