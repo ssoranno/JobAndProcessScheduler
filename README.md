@@ -5,8 +5,8 @@ CPU Job and Process Scheduler Simulation Created For Operating Systems Class
 C++ compiler
 
 ### Setup:
-Clone Repo
-  Run main.cpp
+1. Clone Repo
+2. Run main.cpp
 
 Note: Ensure that all the file are in the same folder location before running.
 
