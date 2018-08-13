@@ -6,7 +6,7 @@ C++ compiler
 
 ### Setup:
 Clone Repo
-Run main.cpp
+  Run main.cpp
 
 Note: Ensure that all the file are in the same folder location before running.
 
