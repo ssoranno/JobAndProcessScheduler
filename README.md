@@ -1,11 +1,14 @@
 # JobAndProcessScheduler
 CPU Job and Process Scheduler Simulation Created For Operating Systems Class
 
-Requirements:
+### Requirements:
 C++ compiler
 
-Setup:
+### Setup:
 Clone Repo
+Run main.cpp
+
+Note: Ensure that all the file are in the same folder location before running.
 
 # Input:
 
