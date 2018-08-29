@@ -8,7 +8,7 @@ C++ compiler
 1. Clone Repo
 2. Run main.cpp
 
-Note: Ensure that all the file are in the same folder location before running.
+Note: Ensure that all the files are in the same folder location before running.
 
 # Input:
 
